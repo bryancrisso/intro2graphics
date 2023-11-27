@@ -1,11 +1,6 @@
-package uk.ac.cam.cl.gfxintro.crsid.tick2;
+package uk.ac.cam.cl.gfxintro.bca35.tick2;
 
-import static org.lwjgl.opengl.GL20.GL_FRAGMENT_SHADER;
-import static org.lwjgl.opengl.GL20.GL_VERTEX_SHADER;
 import static org.lwjgl.opengl.GL20.glGetUniformLocation;
-import static org.lwjgl.opengl.GL20.glUniform3f;
-
-import org.joml.Vector3f;
 
 /**
  * Class inheriting from Mesh class

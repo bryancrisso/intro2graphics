@@ -1,6 +1,4 @@
-package uk.ac.cam.cl.gfxintro.crsid.tick2;
-
-import uk.ac.cam.cl.gfxintro.crsid.tick2.OpenGLApplication;
+package uk.ac.cam.cl.gfxintro.bca35.tick2;
 
 public class Tick2 {
 

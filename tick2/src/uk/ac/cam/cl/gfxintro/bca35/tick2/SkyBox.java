@@ -1,40 +1,23 @@
-package uk.ac.cam.cl.gfxintro.crsid.tick2;
+package uk.ac.cam.cl.gfxintro.bca35.tick2;
 
-import org.joml.Matrix3dc;
-import org.joml.Matrix3f;
-import org.joml.Matrix3fc;
-import org.joml.Matrix3x2fc;
 import org.joml.Matrix4f;
-import org.joml.Matrix4fc;
-import org.joml.Matrix4x3fc;
-import org.joml.Quaternionf;
-import org.joml.Quaternionfc;
 import org.joml.Vector3f;
-import org.joml.Vector3fc;
-import org.joml.Vector4f;
-import org.joml.Vector4fc;
-import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 
 import static org.lwjgl.opengl.GL11.GL_BACK;
 import static org.lwjgl.opengl.GL11.GL_CULL_FACE;
-import static org.lwjgl.opengl.GL11.GL_NO_ERROR;
 import static org.lwjgl.opengl.GL11.GL_TRIANGLES;
 import static org.lwjgl.opengl.GL11.GL_UNSIGNED_INT;
 import static org.lwjgl.opengl.GL11.glCullFace;
 import static org.lwjgl.opengl.GL11.glDrawElements;
 import static org.lwjgl.opengl.GL11.glEnable;
-import static org.lwjgl.opengl.GL11.glGetError;
 import static org.lwjgl.opengl.GL20.GL_FRAGMENT_SHADER;
 import static org.lwjgl.opengl.GL20.GL_VERTEX_SHADER;
 import static org.lwjgl.opengl.GL20.glGetUniformLocation;
 import static org.lwjgl.opengl.GL20.glUniformMatrix4fv;
-import static org.lwjgl.opengl.GL20.glUniform3f;
 import static org.lwjgl.opengl.GL30.glBindVertexArray;
 
-import java.lang.Math;
-import java.nio.ByteBuffer;
-import java.nio.FloatBuffer;;
+;
 
 public class SkyBox {
 	

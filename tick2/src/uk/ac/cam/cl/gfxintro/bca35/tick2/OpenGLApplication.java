@@ -1,6 +1,5 @@
-package uk.ac.cam.cl.gfxintro.crsid.tick2;
+package uk.ac.cam.cl.gfxintro.bca35.tick2;
 
-import org.joml.Vector3f;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.*;
 import org.lwjgl.system.MemoryUtil;
@@ -15,8 +14,6 @@ import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL.createCapabilities;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL13.*;
-import static org.lwjgl.opengl.GL15.*;
-import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL30.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
@@ -174,7 +171,7 @@ public class OpenGLApplication {
 
 		initialize();
 
-		while (glfwWindowShouldClose(window) != true) {
+		while (!glfwWindowShouldClose(window)) {
 			render();
 		}
 	}

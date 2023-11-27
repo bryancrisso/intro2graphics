@@ -1,4 +1,4 @@
-package uk.ac.cam.cl.gfxintro.crsid.tick2;
+package uk.ac.cam.cl.gfxintro.bca35.tick2;
 
 import static org.lwjgl.opengl.GL11.GL_FLOAT;
 import static org.lwjgl.opengl.GL15.GL_ARRAY_BUFFER;

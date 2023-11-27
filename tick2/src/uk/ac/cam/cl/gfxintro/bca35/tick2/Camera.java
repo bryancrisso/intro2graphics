@@ -1,4 +1,4 @@
-package uk.ac.cam.cl.gfxintro.crsid.tick2;
+package uk.ac.cam.cl.gfxintro.bca35.tick2;
 
 import org.joml.Matrix4f;
 import org.joml.Vector3f;

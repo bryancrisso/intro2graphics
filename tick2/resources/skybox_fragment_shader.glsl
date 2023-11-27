@@ -21,7 +21,8 @@ void main()
 	// TODO: Sample the skybox to determine the color of the environment
 	vec3 linear_color = vec3(1,1,1);
 
+    vec3 sky_col = vec3(texture(skybox, frag_texcoord));
 
-	color = tonemap(linear_color);
+	color = tonemap(sky_col);
 }
 
