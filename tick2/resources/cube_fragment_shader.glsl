@@ -40,6 +40,7 @@ void main()
 	vec3 linear_color = vec3(0, 0, 0);
 
     vec3 N = normalize(wc_frag_normal);
+
 	// TODO: Calculate colour using Phong illumination model
     vec3 L = normalize(light_pos - wc_frag_pos);
     vec3 V = normalize(wc_camera_position-wc_frag_pos);
@@ -47,7 +48,14 @@ void main()
 
     vec3 CR = normalize(reflect(-V, N));
 
-    vec3 tex_col = vec3(texture(tex, frag_texcoord));
+
+    vec3 col1 = vec3(0.0,0.0,0.0);
+    vec3 col2 = vec3(1.0,1.0,0.0);
+    float sum = floor(frag_texcoord.x*25) + floor(frag_texcoord.y*25);
+    bool isEven = mod(sum, 2.0) == 0.0;
+    vec3 tex_col = (isEven) ? col1 : col2;
+
+    //vec3(texture(tex, frag_texcoord));
     vec3 sky_col = vec3(texture(skybox, CR));
 
     vec3 ambient = tex_col * I_a;
